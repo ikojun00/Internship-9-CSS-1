@@ -1,13 +1,25 @@
-* {
-  margin: 0;
-  font-family: "Graphik Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-face {
+  font-family: "Adobe Caslon Pro";
+  src: url("../assets/fonts/ACaslonPro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
+* {
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+/*navbar*/
 nav {
+  position: sticky;
+  top: 0;
   display: flex;
   max-width: 100%;
   padding: 1rem;
   border-bottom: solid thin lightgray;
+  background-color: white;
 }
 
 .nav-section {
@@ -51,4 +63,53 @@ a {
 
 #subscribe-button > a {
   color: white;
+}
+
+/*header*/
+
+header {
+  display: flex;
+  max-width: 100%;
+  background-color: black;
+  color: white;
+}
+
+#header-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5rem;
+  width: 50%;
+}
+
+#header-text > h3 {
+  font-size: 36px;
+  font-family: "Adobe Caslon Pro", Helvetica, Arial, sans-serif;
+}
+
+#header-text > h3:hover {
+  text-decoration: underline;
+}
+
+#header-text > p {
+  font-size: 21px;
+  font-weight: normal;
+  text-align: center;
+  font-family: "Adobe Caslon Pro", Helvetica, Arial, sans-serif;
+}
+
+#header-text > p > strong {
+  font-size: 21px;
+  font-family: "Adobe Caslon Pro", Helvetica, Arial, sans-serif;
+}
+
+#header-image {
+  width: 50%;
+}
+
+#header-image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
