@@ -48,10 +48,10 @@ nav {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 .nav-links > a {
-  color: black;
   font-size: 14px;
   font-weight: bold;
 }
@@ -84,12 +84,21 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  gap: 0.5rem;
   padding: 5rem;
   width: 50%;
 }
 
 #header-text > h3 {
-  font-size: 36px;
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+}
+
+#header-text > h4 {
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 1rem;
 }
 
 #header-text > h3:hover {
@@ -98,6 +107,7 @@ header {
 
 #header-text > p {
   font-size: 21px;
+  line-height: 1.33333em;
   font-weight: normal;
   text-align: center;
 }
@@ -115,20 +125,28 @@ header {
   height: 100%;
   object-fit: cover;
 }
-/*article*/
+
+/*articles*/
 article {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 2rem;
+  gap: 3rem;
   padding: 4rem;
 }
 
-article > h3 {
-  font-size: 32px;
+article h3 {
+  font-size: 28px;
   font-weight: normal;
   text-align: center;
+}
+
+article h5 {
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 21px;
+  line-height: 1.33333em;
 }
 
 #today-mix-articles {
@@ -143,20 +161,28 @@ article > h3 {
   object-fit: cover;
 }
 
-.grid-item {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.grid-item > h4 {
-  font-size: 21px;
-  font-weight: 600;
+.grid-item-title {
+  font-size: 22px;
+  font-weight: 500;
   margin-top: 0.5rem;
 }
 
-#today-mix-articles .author {
+.grid-item-text {
+  margin-top: 0.25rem;
+  font-size: 17px;
+  font-weight: 400;
+  color: rgb(51, 51, 51);
+}
+
+#header-text .author,
+.author {
+  margin-top: 0.25rem;
+  font-size: 15px;
   font-weight: bold;
+}
+
+#article-header {
+  padding: 0 4rem;
 }
 
 @media (max-width: 1024px) {
