@@ -255,13 +255,13 @@ article h5 {
 
 @media (max-width: 1024px) {
   #today-mix-articles {
+    width: 100%;
     display: flex;
     overflow-x: auto;
   }
 
   .grid-item {
-    flex: 0 0 auto;
-    width: 25%;
+    flex: 0 0 300px;
   }
 
   #article-header {
@@ -287,17 +287,6 @@ article h5 {
     width: 100%;
   }
 
-  #the-lede a {
-    display: flex;
-    flex-direction: row-reverse;
-  }
-
-  #the-lede img {
-    width: 10rem;
-  }
-}
-
-@media (max-width: 1024px) {
   #the-lede a {
     display: flex;
     flex-direction: column;
