@@ -105,7 +105,8 @@ hr {
   }
 
   .nav-section:last-child,
-  #nav-bottom {
+  #nav-bottom,
+  hr {
     display: none;
   }
 }
@@ -163,6 +164,34 @@ header {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+  #header-text > h3 {
+    font-size: 28px;
+  }
+
+  #header-text > p,
+  #header-text > p > strong {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+  }
+
+  #header-image,
+  #header-text {
+    width: 100%;
+  }
+
+  #header-text {
+    background-color: black;
+  }
 }
 
 /*articles*/
@@ -233,6 +262,22 @@ article h5 {
   .grid-item {
     flex: 0 0 auto;
     width: 25%;
+  }
+}
+
+@media (max-width: 1024px) {
+  #article-header {
+    padding: 0;
+  }
+
+  #article-header #header-image,
+  #article-header #header-text {
+    width: 100%;
+  }
+
+  #article-header header {
+    display: flex;
+    flex-direction: column-reverse;
   }
 }
 
