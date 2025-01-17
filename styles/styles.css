@@ -29,6 +29,10 @@ nav {
   width: 33%;
 }
 
+.nav-section:first-child > img {
+  display: none;
+}
+
 #heading {
   display: flex;
   justify-content: center;
@@ -52,6 +56,8 @@ a {
 }
 
 .nav-links > a {
+  display: flex;
+  align-items: center;
   font-size: 14px;
   font-weight: bold;
 }
@@ -69,6 +75,39 @@ a {
 
 #subscribe-button > a {
   color: white;
+}
+
+#nav-bottom {
+  position: sticky;
+  top: 76px;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 1rem 4rem;
+  background-color: white;
+}
+
+hr {
+  font-size: 1px;
+  color: lightgray;
+}
+
+@media (max-width: 1024px) {
+  .nav-section:first-child {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-section:first-child > img {
+    display: block;
+  }
+
+  .nav-section:last-child,
+  #nav-bottom {
+    display: none;
+  }
 }
 
 /*header*/
