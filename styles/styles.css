@@ -263,9 +263,7 @@ article h5 {
     flex: 0 0 auto;
     width: 25%;
   }
-}
 
-@media (max-width: 1024px) {
   #article-header {
     padding: 0;
   }
@@ -278,6 +276,35 @@ article h5 {
   #article-header header {
     display: flex;
     flex-direction: column-reverse;
+  }
+
+  #the-lede > #today-mix-articles {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #the-lede .grid-item {
+    width: 100%;
+  }
+
+  #the-lede a {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  #the-lede img {
+    width: 10rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  #the-lede a {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #the-lede img {
+    width: 100%;
   }
 }
 
